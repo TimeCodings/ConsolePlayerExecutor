@@ -1,0 +1,14 @@
+name: ConsolePlayerExecuter
+version: '${project.version}'
+main: dev.timecoding.consoleplayerexecuter.ConsolePlayerExecuter
+api-version: 1.19
+authors: [ TimeCoding ]
+description: Execute a player only command from the console!
+website: timecoding.de
+
+commands:
+  executeasplayer:
+    description: "This command allows to execute commands from the console as a player!"
+    aliases:
+      - ecap
+
