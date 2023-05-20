@@ -20,8 +20,8 @@ public class ConsolePlayerExecuterCompleter implements TabCompleter {
             if(args.length == 1){
                 for(Player allWhichAreOnline : Bukkit.getOnlinePlayers()){
                     returnList.add(allWhichAreOnline.getName());
-                    returnList.add("@a");
                 }
+                returnList.add("@a");
             }else if(args.length == 2){
                 returnList.add("YOURCOMMAND");
             }
