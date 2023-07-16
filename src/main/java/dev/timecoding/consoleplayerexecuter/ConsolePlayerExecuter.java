@@ -11,14 +11,14 @@ public final class ConsolePlayerExecuter extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage("§aThe plugin §e"+this.getDescription().getName()+" §aby §eTimeCode §agot enabled!");
-        PluginCommand mainCommand = this.getCommand("executeasplayer");
+        Bukkit.getConsoleSender().sendMessage("§aThe plugin §e"+this.getDescription().getName()+" §7(v"+this.getDescription().getVersion()+") §aby §eTimeCode §agot enabled!");
+        PluginCommand mainCommand = this.getCommand("executeas");
         mainCommand.setExecutor(new ConsolePlayerExecuterCommand());
         mainCommand.setTabCompleter(new ConsolePlayerExecuterCompleter());
     }
 
     @Override
     public void onDisable() {
-        Bukkit.getConsoleSender().sendMessage("§aThe plugin §e"+this.getDescription().getName()+" §aby §eTimeCode §cgot disabled!");
+        Bukkit.getConsoleSender().sendMessage("§aThe plugin §e"+this.getDescription().getName()+" §7(v"+this.getDescription().getVersion()+") §aby §eTimeCode §cgot disabled!");
     }
 }

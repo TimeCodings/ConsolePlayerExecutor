@@ -7,8 +7,8 @@ description: Execute a player only command from the console!
 website: timecoding.de
 
 commands:
-  executeasplayer:
+  executeas:
     description: "This command allows to execute commands from the console as a player!"
     aliases:
-      - ecap
+      - executeasplayer
 
