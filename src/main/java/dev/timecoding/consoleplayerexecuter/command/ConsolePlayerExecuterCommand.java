@@ -50,6 +50,8 @@ public class ConsolePlayerExecuterCommand implements CommandExecutor {
                         });
                         if(players.size() > 0){
                             sender.sendMessage("§aThe command §e"+executableCommand+" §awas executed successfully as §e"+this.getPlayerStringList(players));
+                            String finalExecutableCommand = executableCommand;
+                            players.forEach(s -> Bukkit.getPlayer(s).performCommand(finalExecutableCommand));
                             if(notOnline.size() > 0){
                                 sender.sendMessage("§cUnfortunately, the command could not be executed as §e"+this.getPlayerStringList(notOnline));
                             }
