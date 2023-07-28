@@ -1,6 +1,6 @@
-name: ConsolePlayerExecuter
+name: ConsolePlayerExecutor
 version: '${project.version}'
-main: dev.timecoding.consoleplayerexecuter.ConsolePlayerExecuter
+main: dev.timecoding.consoleplayerexecutor.ConsolePlayerExecutor
 api-version: 1.19
 authors: [ TimeCoding ]
 description: Execute a player only command from the console!
